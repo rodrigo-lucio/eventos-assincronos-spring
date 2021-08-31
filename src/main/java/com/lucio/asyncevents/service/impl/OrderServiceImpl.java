@@ -15,7 +15,7 @@ public class OrderServiceImpl implements OrderService {
 
 	@Async
 	@EventListener
-	public void integratePaymentHateway(OrderCreatedEvent orderCreatedEvent) {
+	public void integratePaymentGateway(OrderCreatedEvent orderCreatedEvent) {
 		try {
 			log.info(String.format("integratePaymentHateway start %s", orderCreatedEvent));
 			Thread.sleep(5000);

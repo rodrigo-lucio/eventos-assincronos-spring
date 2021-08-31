@@ -5,6 +5,6 @@ import com.lucio.asyncevents.event.OrderCreatedEvent;
 public interface OrderService {
 
 	void sendEmailOrderCreated(OrderCreatedEvent orderCreatedEvent);
-	void integratePaymentHateway(OrderCreatedEvent orderCreatedEvent);
+	void integratePaymentGateway(OrderCreatedEvent orderCreatedEvent);
 	
 }
